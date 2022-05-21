@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o Dom</title>
+    <style>
+        body{
+            background-color: darkred;
+            color: white;
+            font-size: 18pt;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo a usar o Dom</h1>
+    <hr>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o<strong> Dom </strong> em Javascript</p>
+    <div id="m">clique aqui</div>
+    <!--o que é o Dom?
+    é um modelo de objetos ou conjunto de objetos para documentos que fica dentro do navegador.
+    -->
+    
+
+    <script>
+        var m = document.getElementById('m')
+        document.write(m.innerText)
+        m.innerText= 'vamos mudar'
+        m.style.backgroundColor = 'green'
+
+         /* var body = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[1]
+        window.document.write('vai ser mostrado assim: ' + p1.innerText)
+       window.document.write(p2.innerHTML)
+       p1.style.color='black '
+       body.style.backgroundColor ='orange'
+       */
+
+       /* window.document.write(window.navigator.appName) - saber o navegador atual.
+        window.document.write(window.URL) - saber a url que estou usando
+        */
+       
+       /* aqui como foi selecionado o parágrafo, contudo,  a dois parágrafos, nesse caso usa-se os concehtes para determinar qual parágrafo que deseja.
+       */
+      /* o innerText vai msotrar o que foi escrito no parágrafo sem as modificações que estão no parágrafo, ex: 'strong'.Selecionado, que vai apresentado pelo 'document.write' */
+      /*OBS: com o innerText pode modicar o que foi escrito
+      /* o innerHtml vai apresentar já com as modificações que foram feitas no parágrafo. */
+      /*é possivel fazer as mudanças de css por aqui modificando o body, parágrafos, h1 e outros. */
+
+
+    </script>
+</body>
+</html>

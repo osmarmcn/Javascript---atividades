@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mudança com o Dom</h1>
+    <hr>
+    <p>
+        Tudo o que um sonho precisa para ser realizado é alguém que acredite que ele possa ser realizado.
+
+    </p>
+    <p>
+        Imagine uma nova <strong>história</strong>  para sua vida e  <em>acredite nela</em> .
+    </p>
+    <p>
+        A amizade desenvolve a felicidade e reduz o sofrimento, duplicando a nossa alegria e dividindo a nossa dor.
+    </p>
+    <div class="muda">olá!</div>
+    <div id="mud">tudo bom!</div>
+    <div name="ale">vamos!</div>
+    <div name="ale">agora?</div>
+
+    <script>
+       /* var p1 = document.getElementsByTagName('p')[0]
+        document.write(p1.innerText)
+        p1.style.color = 'green'
+        p1.style.backgroundColor = 'pink'
+        */
+        
+
+        /* var p2 = document.getElementsByTagName('p')[1]
+        document.write(p2.innerHTML)
+        p2.innerHTML = 'A partir de hoje tudo vai mudar'
+        */
+      
+        /*var d = document.getElementsByName('ale')[1]
+       document.write(d.innerText)
+       d.style.backgroundColor = 'blue'
+       d.style.color = 'white'
+       */
+      
+       //usando o querySelector ou qerySelectorAll
+       var m = document.querySelector('mud')
+       m.innerHTML ='vamos agora'
+       // pode usar div#mud, pode ser usado nas class também.
+
+
+
+
+
+
+    </script>
+</body>
+</html>

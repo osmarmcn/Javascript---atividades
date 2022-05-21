@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('qual seu nome? ')
+        document.write(`seu nome tem ${nome.length} letras`)
+        document.write(`tudo bom ${nome}! seu nome tem ${nome.length} letras`)
+        document.write(`<h2> seu ${nome.toUpperCase(nome)}!</h2> `)
+        document.write(`seu nome em letras minúscalas ${nome.toLowerCase(nome)} poussindo ${nome.length} letras`)
+
+        /*Formatação de uma string:
+        isso da atraves da varaival que é posta:
+        ex:
+        s.length - conta quantos caracteres tem a string e não usa '()'
+        s.touppercase() -deixa a string com letras maiùsculas e usa '()'
+        s.tolowercase() - deixa a string com letra minúscula e usa '()'
+
+        formas de uso:
+        para escrevar uma string do prompt para body usa-se o document.write
+        pode deixar o documento em h2 como no exemplo acima ou se preferir editado no css
+
+        dentro  do terminal no node:
+        caso queira mostrar um numero com duas casas decimais usa .tofixed()
+        outra coisa, caso queira substuir o ponto da casa decimal por uma virgula usa-se o replace('.', ','), assim,, substitui o ponto pela virgula.
+        var n = 1500.5
+        n.toFixed(2) - 1500.50
+        n.toFixed(2).replace('.',',') - 1500,50
+
+        OUTRA FORMA:
+        n.toLocalstring('pt-BR', {style: 'currency', currency:'BRL'})
+        esse Localstring é uma string localizada.
+        dentro das chaves vai ficar as configuraÇões ou atributos do objeto.
+        'currency' isso é para msotrar em valor monetário.
+        */
+    </script>
+</body>
+</html>

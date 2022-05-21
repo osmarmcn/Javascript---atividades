@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamentos de dados</title>
+</head>
+<body>
+
+    <script>
+       var n1 = Number.parseInt(window.prompt('digite um número:')) 
+       var n2 = Number.parseInt(window.prompt('digite outro número:'))
+       var s = n1 + n2
+       window.alert('a soma dos valores descritos é '+ s)
+       window.alert('a soma dos valores é ' + String(s))
+       window.alert(`a soma de ${n1} e ${n2} obtendo  a ${s}`)
+        
+        /*como no prompt está em forma de uma string quando for perdido a soma do valor o JS vai entender como uma junção, pois o símbolo de '+' possui duas funções uam de concatenar outra de somar, para que aja a soma dos valores no caso, será necessário utlizar uma conversão de uma string para um number.
+        Assim, sendo feito atraves do 'number.pardeint()', isso para valores inteiros, já para valores reais usa-se o 'number.parsefloat()'.
+        ex: 
+        var n = number.parseint(window.prompt('digite um valor:')), desta maneira, o valor é convertido de uma string para o número.
+        outra forma seria usar só number(), ficando, assim:
+        var n = number(window.prompt('digite um número: ')), está forma não identifca se é inteiro ou real o número, mas caso queira especificar utilize o priemeiro exemplo.
+        
+        Da mesma forma que pode haver uma conversão entre number e string pode ser feito da maneira contraria, sendo assim, descrito:
+        caso queira transformar um número em uma string usa-se string() ou n.tostring().
+        Essa sãoa as duas maneiras usadas.
+
+        Formatação de uma string:
+        isso da atraves da varaival que é posta:
+        ex:
+        s.length - conta quantos caracteres tem a string e não usa '()'
+        s.touppercase() -deixa a string com letras maiùsculas e usa '()'
+        s.tolowercase() - deixa a string com letra minúscula e usa '()'
+        */
+    </script>
+    
+</body>
+</html>
