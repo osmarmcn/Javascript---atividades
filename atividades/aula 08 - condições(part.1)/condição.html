@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição</title>
+</head>
+<body>
+    <!--a dois tipos de condição:
+    a condição simples  só com if e a condição composta com if e else. A primeira mostra só valor verdadeiro, já segunda além do valor verdadeiro mostra o valor falso.
+    -->
+    <!--o 'name aqui vai ser utilizado por outras linguagem e não pelo js'-->
+    <h1>Verificador de multas</h1>
+    <hr>
+    <input type="number" name="txtvel" id="txtvel">km/h 
+    <input type="button" value="verificar" onclick="velocidade()">
+    <div id="res">resultado</div>
+
+    <script>
+        function velocidade(){
+            var vel = document.getElementById('txtvel')
+            var v = Number(vel.value)
+            var res = document.querySelector('#res')
+            res.innerHTML = `<p> sua velocidade atual é de ${v} km/h <//p>`
+            if (v > 80){
+                res.innerHTML +=` sua velocidade foi de ${v} km/h, você foi <strong>multado!</strong> `
+               
+            }else{
+                res.innerHTML+= `<p>você está dentro da velocidade permitida. Dirija com cuidado!</p>`
+            }
+            res.innerHTML += 'dirija usando <strong>sinto de segurança</strong>.'
+        }
+        
+        /* O '+=' é para concatenar para permitir que a outra mensage que utliza o inner.html nâo seja alterada 
+        OBS: Não é obriagatório usar a tag paragrafo, para permirtir que outra mensagem modificada no inner.html seja vista sem alterar anterior tem que fazer uso do '+='' */
+    </script>
+    
+</body>
+</html>
