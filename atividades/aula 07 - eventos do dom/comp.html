@@ -12,6 +12,10 @@
     <input type="button" value="=" onclick="multiplicar()">
     <div id="re">resultado</div>
     --> 
+    <input type="number" id="text1">
+    <input type="number" id="text2" >
+    <input type="button" value="=" onclick="dividir()">
+    <div id="resultado">veja o resultado:</div>
     
     <script>
         /*function multiplicar(){
@@ -24,6 +28,21 @@
             re.innerText = `o resultado da multiplicação de ${numb1} x ${numb2} = ${r}`
         }
         */
+       function dividir(){
+           var tn1 = document.getElementById('text1')
+           var tn2 = document.querySelector('#text2')
+           var resultado = document.querySelector('#resultado')
+           var n1 = Number(tn1.value)
+           var n2 = Number(tn2.value)
+           var total = n1 / n2
+           var resto = n1 % n2
+           var pot = n1 **n2
+           var s = n1 + n2 + (n1*n2)/2 + n1*(n1+n2**2)/2
+           resultado.innerHTML = `o resultado da divisão de ${n1} / ${n2} = ${total} com resto da divisão ${resto} e sua potência de ${pot} e uma expressão númerica ${s}`
+
+
+         
+       }
             
 
 
