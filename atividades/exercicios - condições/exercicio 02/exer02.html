@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>exercicio 02</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <form>
+            <label for="">data nascimento:</label>
+            <input type="number" name="data" id="txtano"><br>
+            <label for="">sexo:</label>
+            <label for="">masculino</label>
+            <input type="radio" name="sexo" value="M" checked><!--determinando o valor, pode escolher entre masc ou fem -->
+            <!--o name tem que ser igual quando for usar o radio para permitir esolher uma das opções caso naos seja igual pode escolher as duas-->
+            <label for="">feminino</label>
+            <input type="radio" name="sexo" value="F"><br>
+            <!--o ckecked vai permitir que a opção já aapreça clicada em determinada escolha -->
+            <input type="button" value="validar" onclick="volta()">
+        </form>
+        <div id="res">
+          <p>preencha o formulário e veja o resultado</p>  
+        </div>
+    </main>
+    <footer></footer>
+
+    <script src="js/scripit.js"></script>
+</body>
+</html>
