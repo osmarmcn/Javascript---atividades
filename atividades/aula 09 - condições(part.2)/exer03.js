@@ -4,8 +4,8 @@ console.log(diaSem)
 diaSem = 3
 switch (diaSem){
     case 0:
-    console.log('domingo')
-    break
+        console.log('domingo')
+        break
     case 1:
         console.log('segunda')
         break
