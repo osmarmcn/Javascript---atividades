@@ -37,10 +37,26 @@ for(let posicao = 0;posicao <= valores.length; posicao++ ){
     // posso colocar valores.sort()[posicao] para deixar em ordem 
 
 
-let valores = [2,3,5,6,8,4]
-valores.sort()
-for(posicao in valores ){
-    console.log(`a posição ${posicao} possui o valor ${valores[posicao]}`)
+//let valores = [2,3,5,6,8,4]
+//valores.sort()
+//for(posicao in valores ){
+    //console.log(`a posição ${posicao} possui o valor ${valores[posicao]}`)
      /*esse modo é o mais simplificado, no qual não necessita de acrescentar contador e declarar com length */
+//}
+
+let score = [
+    2,
+    3,
+    8,
+    90,
+    12,
+    56
+]
+score.sort(orndenar)
+function orndenar(a,b){
+    return a - b
 }
+//score.sort((a,b) => a - b)
+console.log(score)
+
 
