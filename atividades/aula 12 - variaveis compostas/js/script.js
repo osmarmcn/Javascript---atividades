@@ -44,7 +44,7 @@ for(let posicao = 0;posicao <= valores.length; posicao++ ){
      /*esse modo é o mais simplificado, no qual não necessita de acrescentar contador e declarar com length */
 //}
 
-let score = [
+/*let score = [
     2,
     3,
     8,
@@ -58,5 +58,21 @@ function orndenar(a,b){
 }
 //score.sort((a,b) => a - b)
 console.log(score)
+*/
+let num = [2,5,1,3,7,9,40,67,34,21,15,1280,189]
+num.sort(ordenar)
+function ordenar(a,b){
+    return a - b
+}
+num.length
+console.log(`elementos do array ${num}`)
+let pos = num.indexOf(4)
+if (pos == -1){
+    console.log('o valor não foi encontrado')
+}else{
+    console.log(`o valor está na posição ${pos}`)
+}
+// caso tenha 'sort()' ele vai ordenar os numero para sua devida posição quando for mostrado vai está  o numero na posição em que foi realizado a ornaização, no caso do '2' posição inicial '0' com reogarnização posição '1'
+//obs: o -1 indica que o valor não foi encotrado, o uso do if é meramente para indicar a não localizaÇão 
 
 
