@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <button type="button" onclick="clicar()">clicar</button>
+    <h1 id="res" onclick="redi()"></h1>
+    <p onmousemove="passa()">passar o mouse </p>
+    <p id="passar" onmouseout="pass()">passar novamente</p>
+    
+    <script>
+        function clicar(){
+            document.getElementById('res')
+            res.innerHTML = '<strong>VOCÊ CLICOU</strong>'
+           // alert('você cliclou!')
+        }
+
+        function redi(){
+            window.open("https://ge.globo.com/") // abre em outra guia 
+            window.location.href = "https://ge.globo.com/" // abre na mesma pagina
+        }
+        function passa(){
+           // alert('você passou')
+        }
+        function pass(){
+            document.getElementById('passar')
+            passar.innerHTML = 'você passou'
+        }
+
+        function load(){
+            alert('pagina carregada')
+        }
+
+    </script>
+</body>
+</html>
